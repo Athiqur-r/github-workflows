@@ -18,7 +18,6 @@ jobs:
         with:
           node-version: 13.x
           cache: npm
-      - run: cd fe
       - run: npm i
       - run: npm run build
       - run: pm2 stop 0
