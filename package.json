@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
-    "build": "CI=false && react-scripts --max_old_space_size=4096 build"
+    "build": "react-scripts build"
   },
   "keywords": [],
   "author": "",
