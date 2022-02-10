@@ -11,7 +11,7 @@ function App() {
           alt="logo"
         />
         <p>
-          Helllo All, I am Mohammad Athiqur Raheman.
+          Helllo All, I am Mohammad Raheman.
           <br /> This webpage is created for testing purpose.
         </p>
         <a
