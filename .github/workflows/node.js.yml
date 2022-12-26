@@ -20,3 +20,5 @@ jobs:
         #git config --global user.email 'me@antonputra.com'
         #git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}    
         npm run build
+        npm install -g serve
+        serve -s build
