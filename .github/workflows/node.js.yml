@@ -24,3 +24,12 @@ jobs:
         #serve -s build
         pwd
         ls /home/runner/work/github-workflows/github-workflows
+        
+    - name: Deploy to my EC2 instance
+      uses: easingthemes/ssh-deploy@v2.1.5
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
+        SOURCE: "/home/runner/work/github-workflows/github-workflows/build/*"
+        REMOTE_HOST: "ec2-13-126-209-18.ap-south-1.compute.amazonaws.com"
+        REMOTE_USER: "ubuntu"
+        TARGET: "/var/www/NGINX/build"
